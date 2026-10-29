@@ -103,16 +103,16 @@ footer{margin:64px 0 56px;font-size:12px;color:var(--mute);line-height:1.9}
 .cv h3{font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--mute);
  margin-bottom:8px}
 .cv li{list-style:none;margin-bottom:3px}
-</style></head><body>
+:root{--mute:#6E6D66}.au .lb{display:flex;align-items:center;gap:6px}.au .lg{margin-left:auto;display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}.au .lg button{font:inherit;font-size:12px;padding:3px 11px;border:0;background:none;color:var(--mute);cursor:pointer}.au .lg button[aria-pressed=true]{background:var(--ink);color:var(--paper)}</style></head><body>
 <main class="wrap work">
  <a class="back" href="index.html">← 전체 작품</a>
  <div class="big"><img src="img/w12.jpg" alt="한아름"></div>
  <h2>한아름</h2>
  <div class="spec">정승연 · 40×38cm · 최우수상</div>
- <div class="au"><div class="lb"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6A6A62" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>음성 해설</div><audio controls preload="none" src="audio/12.mp3"></audio></div>
+ <div class="au bi"><div class="lb"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6A6A62" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><span class="t">음성 해설</span><span class="lg"><button type="button" aria-pressed="true" data-src="audio/12.mp3" data-label="음성 해설">한국어</button><button type="button" aria-pressed="false" data-src="audio/en/12.mp3" data-label="Audio guide">English</button></span></div><audio controls preload="none" src="audio/12.mp3"></audio></div>
  
  <div class="desc">색동보자기에 다양한 자수와 매듭, 장신구를 함께 담아 전통규방공예에 깃들 복과 행복의 염원을 표현하였다. 꽃과 나비, 옥,산호,진주 등 각각의 길상의 소재가 지닌 의미를 하나로 모아 풍성한 복을 상징적으로 담아냈다. 전통보자기의 아름다운 색과 조형미를 바탕으로 좋은것에 좋은 것을 더해 복을 한아름 선물하는 마음을 현대적 창작민화로 풀어 냈다</div>
  <div class="nav"><span></span><a href="w14.html" style="text-align:right">다음<b>추억</b></a></div>
  <footer>2026 민화대전 규방공예 — 선과 색으로 잇는 규방의 미학<br>
   2026. 11. 11 (수) – 종료일 확인 중 · 갤러리 공간35</footer>
-</main></body></html>
+</main><script>document.querySelectorAll('.au.bi').forEach(function(box){var a=box.querySelector('audio'),t=box.querySelector('.t'),bs=box.querySelectorAll('.lg button');function pick(b,play){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});t.textContent=b.dataset.label;if(a.getAttribute('src')!==b.dataset.src){a.src=b.dataset.src}if(play){a.play()}}bs.forEach(function(b){b.onclick=function(){pick(b,true)}});if(!/^ko/i.test(navigator.language||'')){pick(bs[1],false)}});</script></body></html>
