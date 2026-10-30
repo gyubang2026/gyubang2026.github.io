@@ -109,10 +109,11 @@ footer{margin:64px 0 56px;font-size:12px;color:var(--mute);line-height:1.9}
  <div class="big"><img src="img/w22.jpg" alt="전통자수보자기 (수화문보자기)"></div>
  <h2>전통자수보자기 (수화문보자기)</h2>
  <div class="spec">김종숙 · 재현 · 38×38cm · 입선</div>
+ <div class="au bi"><div class="lb"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6A6A62" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><span class="t">음성 해설</span><span class="lg"><button type="button" aria-pressed="true" data-src="audio/22.mp3" data-label="음성 해설">한국어</button><button type="button" aria-pressed="false" data-src="audio/en/22.mp3" data-label="Audio guide">English</button></span></div><audio controls preload="none" src="audio/22.mp3"></audio></div>
  
  <div class="desc">전통자수보자기(수화문보자기)를 현대적 색감으로 채색하여 행복과 아름다움이 깃든 보자기로 표현하였다.</div>
- <div class="nav"><a href="w05.html">이전<b>부귀영화 Ⅰ</b></a><a href="w33.html" style="text-align:right">다음<b>보자기 Ⅰ</b></a></div>
+ <div class="nav"><a href="w05.html">이전<b>부귀영화 Ⅰ</b></a><a href="w33.html" style="text-align:right">다음<b>행복보자기 Ⅰ</b></a></div>
  <footer>2026 민화대전 규방공예 수상작전 — 선과 색으로 잇는 규방의 미학<br>
   2026. 11. 11 (수) – 11. 16 (월) · 갤러리 공간35<br>
   <span class="credit">제작 · <a href="https://soritgyeol.github.io/">소릿결</a></span></footer>
-</main></body></html>
+</main><script>document.querySelectorAll('.au.bi').forEach(function(box){var a=box.querySelector('audio'),t=box.querySelector('.t'),bs=box.querySelectorAll('.lg button');function pick(b,play){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});t.textContent=b.dataset.label;if(a.getAttribute('src')!==b.dataset.src){a.src=b.dataset.src}if(play){a.play()}}bs.forEach(function(b){b.onclick=function(){pick(b,true)}});if(!/^ko/i.test(navigator.language||'')){pick(bs[1],false)}});</script></body></html>
